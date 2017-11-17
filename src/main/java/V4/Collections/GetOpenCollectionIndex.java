@@ -1,4 +1,4 @@
-package collections;
+package V4.Collections;
 
 /**
  * References:
@@ -35,7 +35,7 @@ public class GetOpenCollectionIndex {
         try {
             response = httpclient.execute(httpget);
         } catch (IOException ex) {
-            Logger.getLogger(GetOpenCollectionIndex.class.getName()).log(Level.SEVERE, null, ex);
+            ex.printStackTrace();
         }
         HttpEntity entity = response.getEntity();
         System.out.println("----------------------------------------");
@@ -49,9 +49,9 @@ public class GetOpenCollectionIndex {
                 System.out.println(line);
             }
         } catch (IOException ex) {
-            System.out.println("IOException Happen");
+            ex.printStackTrace();
         } catch (UnsupportedOperationException ex) {
-            System.out.println("UnsupportedOperationException Happen");
+            ex.printStackTrace();
         }
 
     }
