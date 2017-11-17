@@ -2,16 +2,13 @@ package V4.Collections;
 
 /**
  * References:
- * https://stackoverflow.com/questions/3283234/http-basic-authentication-in-java-using-httpclient
- * https://www.mkyong.com/java/apache-httpclient-examples/
+
  */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Base64;
 import java.util.Base64.Encoder;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
